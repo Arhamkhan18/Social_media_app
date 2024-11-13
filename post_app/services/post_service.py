@@ -44,3 +44,6 @@ class PostService:
         posts = Post.query.filter(Post.content.like('%' + hashtag + '%')).all()
         return posts  
     
+    @staticmethod
+    def get_posts_by_user(user_id):
+        print("hlo users")
